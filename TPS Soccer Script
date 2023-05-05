@@ -1,0 +1,10 @@
+while wait(0.3) do
+    local args = {
+    [1] = workspace.TPSSystem.TPS,
+    [2] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+    [3] = 20,
+    [4] = Vector3.new(2000000, 300, 2000000)
+}
+
+workspace.FE.Actions.KickG1:FireServer(unpack(args))
+end
